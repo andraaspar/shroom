@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="Shroom is an artillery game (a Worms clone), in which you control a team of cartoon characters armed with various weapons to defeat other teams with." />
+<link rel="shortcut icon" href="favicon.ico"/>
+
+<title>Shroom – Artillery Game</title>
+
+<style type="text/css">
+html, body
+{width:100%;height:100%;margin:0;padding:0;background:#333333;color:#ffffff;font-family:sans-serif;}
+a
+{color:#66ffff;text-decoration:none;}
+a:hover
+{text-decoration:underline;}
+object
+{display:block;}
+.altContent
+{width:400px;margin:20px auto;}
+</style>
+
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript">
+	swfobject.registerObject("game", "11.1.102", "expressInstall.swf");
+</script>
+
+<!-- Google Analytics -->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-61061950-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+	<object id="game" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%">
+		<param name="movie" value="shroom.swf" />
+		<param name="wmode" value="direct" />
+		<!--[if !IE]>-->
+		<object type="application/x-shockwave-flash" data="shroom.swf" width="100%" height="100%" wmode="direct">
+		<!--<![endif]-->
+			<div class="altContent">
+			<h1>Shroom</h1>
+			<h2>Artillery Game</h2>
+			<p>Shroom is an artillery game (a Worms clone), in which you control a team of cartoon characters armed with various weapons to defeat other teams with.</p>
+			<h3>Technical requirements</h3>
+			<p>Shroom requires the Adobe Flash plug-in to run. If you are reading this, it means that you do not have an appropriate version of this plug-in installed. The plug-in can be downloaded from <a href="http://get.adobe.com/flashplayer/">the Adobe website.</a></p>
+			<h3>Support</h3>
+			<p>If you have any questions about this game, you can <a href="help.html">read the help</a>.</p>
+			</div>
+		<!--[if !IE]>-->
+		</object>
+		<!--<![endif]-->
+	</object>
+</body>
+</html>

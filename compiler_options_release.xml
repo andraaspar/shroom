@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<flex-config xmlns="http://www.adobe.com/2006/flex-config">
+	
+	<!-- Main class -->
+	<file-specs>
+		<path-element>src\com\pirkadat\ui\Main.as</path-element>
+	</file-specs>
+	
+	<!-- Output file name -->
+	<output>bin\shroom-v001.swf</output>
+	
+	<!-- Canvas size -->
+	<default-size>
+		<width>1024</width>
+		<height>640</height>
+	</default-size>
+	
+	<!-- Background color -->
+	<default-background-color>0x000000</default-background-color>
+	
+	<!-- Frame rate -->
+	<default-frame-rate>25</default-frame-rate>
+	
+	<!-- Use network -->
+	<use-network>true</use-network>
+	
+	<!-- Target player: edit external-library-path!!! -->
+	<target-player>10.1.53</target-player>
+	
+	<compiler>
+		<!--<external-library-path>
+			<path-element>${flexlib}\libs\player\10.0\playerglobal.swc</path-element>
+		</external-library-path>-->
+		
+		<!-- Debug -->
+		<debug>false</debug>
+		
+		<!-- Opimize -->
+		<optimize>true</optimize>
+		
+		<!-- Conditional compilation -->
+		<define>
+			<name>C::debug</name>
+			<value>false</value>
+		</define>
+		<define>
+			<name>C::release</name>
+			<value>!C::debug</value>
+		</define>
+		
+		<!-- Include libraries -->
+		<!--
+		<include-libraries>
+			<library>string</library>
+		</include-libraries>
+		-->
+		
+		<!-- Incremental compilation -->
+		<incremental>false</incremental>
+		
+		<!-- Source path -->
+		<source-path append="true">
+			<path-element>.\src</path-element>
+		</source-path>
+	</compiler>
+	
+	<!-- Frames -->
+	<frames>
+		<frame>
+			<label>BigBunch</label>
+			<classname>com.pirkadat.ui.Gui</classname>
+		</frame>
+	</frames>
+	
+	<!-- Script limits -->
+	<default-script-limits>
+		<max-recursion-depth>1000</max-recursion-depth>
+		<max-execution-time>30</max-execution-time>
+	</default-script-limits>
+	
+</flex-config>
