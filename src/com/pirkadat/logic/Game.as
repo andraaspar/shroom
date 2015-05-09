@@ -31,7 +31,7 @@ package com.pirkadat.logic
 		
 		public var teamCounter:int;
 		
-		public var membersPerTeam:int = 3;
+		public var membersPerTeam:int = 1;
 		
 		public var editedTeam:Team;
 		
@@ -75,7 +75,7 @@ package com.pirkadat.logic
 			}
 			else
 			{
-				level = new PaintedLevel();
+				level = new GeneratedLevel();
 			}
 			
 			characterAppearances = getAllPossibleCharacterAppearances();
@@ -115,8 +115,12 @@ package com.pirkadat.logic
 				// Teams
 				
 				addTeam();
-				addTeam();
 				editedTeam.controller = Team.CONTROLLER_AI;
+				addTeam();
+				addTeam();
+				addTeam();
+				addTeam();
+				editedTeam.controller = Team.CONTROLLER_HUMAN;
 			}
 		}
 		
@@ -425,7 +429,7 @@ package com.pirkadat.logic
 			}
 			if (!exisingTeam)
 			{
-				newTeam.name = "Team " + (++teamCounter);
+				newTeam.name = "Player " + (++teamCounter);
 				if (editedTeam)
 				{
 					newTeam.controller = editedTeam.controller;
